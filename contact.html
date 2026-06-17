@@ -1,102 +1,40 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ | Lữ Thị Trúc Sang</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên hệ</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="logo">TRÚC SANG</div>
-
-    <ul class="menu">
-        <li><a href="index.html">Trang chủ</a></li>
-        <li><a href="about.html">Giới thiệu</a></li>
-        <li><a href="projects.html">Dự án</a></li>
-        <li><a href="contact.html">Liên hệ</a></li>
-    </ul>
-
-    <button id="themeToggle">🌙</button>
+<nav>
+<a href="index.html">Trang chủ</a>
+<a href="about.html">Giới thiệu</a>
+<a href="projects.html">Dự án</a>
+<a href="contact.html">Liên hệ</a>
 </nav>
 
-<section class="page-banner hidden">
-    <h1>Liên hệ</h1>
-</section>
+<section class="hidden">
 
-<section class="section hidden">
+<h1>Liên hệ</h1>
 
-    <div class="contact-box">
+<form action="https://formspree.io/f/YOUR_ID" method="POST">
 
-        <div class="contact-info">
+<input type="text" name="name" placeholder="Họ tên" required>
 
-            <h2>Thông tin liên hệ</h2>
+<input type="email" name="email" placeholder="Email" required>
 
-            <p>
-                <strong>Họ tên:</strong>
-                Lữ Thị Trúc Sang
-            </p>
+<textarea name="message" rows="6" placeholder="Nội dung"></textarea>
 
-            <p>
-                <strong>Email:</strong>
-                luthitrucsang241@gmail.com
-            </p>
+<button type="submit">
+Gửi
+</button>
 
-            <p>
-                <strong>Số điện thoại:</strong>
-                0937283546
-            </p>
-
-            <p>
-                <strong>Trường:</strong>
-                Đại học Văn Hiến
-            </p>
-
-        </div>
-
-        <form
-            action="https://formspree.io/f/mrevvpen"
-            method="POST"
-            class="contact-form"
-        >
-
-            <input
-                type="text"
-                name="name"
-                placeholder="Họ và tên"
-                required
-            >
-
-            <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-            >
-
-            <textarea
-                name="message"
-                rows="6"
-                placeholder="Nội dung tin nhắn"
-                required
-            ></textarea>
-
-            <button type="submit" class="btn">
-                Gửi tin nhắn
-            </button>
-
-        </form>
-
-    </div>
+</form>
 
 </section>
 
-<footer>
-    <p>© 2026 Lữ Thị Trúc Sang | Portfolio</p>
-</footer>
-
-<script src="js/script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
