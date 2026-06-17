@@ -1,4 +1,24 @@
-document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
-console.log(&#39;Portfolio của Lữ Thị Trúc Sang đã load xong!&#39;);
-alert(&#39;Chào mừng bạn đến với portfolio thật trên Internet của mình!&#39;);
+document.addEventListener('DOMContentLoaded',()=>{
+
+    const btn=document.getElementById('darkModeBtn');
+
+    if(btn){
+        btn.addEventListener('click',()=>{
+            document.body.classList.toggle('dark');
+        });
+    }
+
+    const observer=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    document.querySelectorAll('.project').forEach(el=>{
+        el.classList.add('hidden');
+        observer.observe(el);
+    });
+
 });
