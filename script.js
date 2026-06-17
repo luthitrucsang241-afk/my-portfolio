@@ -1,24 +1,41 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const btn = document.getElementById('darkModeBtn');
+    const themeToggle = document.getElementById("themeToggle");
 
-    if (btn) {
-        btn.addEventListener('click', () => {
-            document.body.classList.toggle('dark');
-        });
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark");
+        themeToggle.textContent = "☀️";
     }
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-        });
+    themeToggle.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark");
+
+        if(document.body.classList.contains("dark")){
+            localStorage.setItem("theme","dark");
+            themeToggle.textContent = "☀️";
+        }
+        else{
+            localStorage.setItem("theme","light");
+            themeToggle.textContent = "🌙";
+        }
+
     });
 
-    document.querySelectorAll('.project').forEach(project => {
-        project.classList.add('hidden');
-        observer.observe(project);
+    const hiddenElements = document.querySelectorAll(".hidden");
+
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+
+        });
+
     });
+
+    hiddenElements.forEach(el => observer.observe(el));
 
 });
