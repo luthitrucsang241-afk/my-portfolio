@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const hiddenElements = document.querySelectorAll(".hidden");
 
-    const observer = new IntersectionObserver(entries => {
+    const observer = new IntersectionObserver((entries) => {
 
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
 
             if(entry.isIntersecting){
                 entry.target.classList.add("show");
@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    hiddenElements.forEach(el => observer.observe(el));
+    hiddenElements.forEach((el) => {
+        observer.observe(el);
+    });
 
 });
