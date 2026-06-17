@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dự án của tôi</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <nav>
-<a href="index.html">Trang chủ</a>
-<a href="about.html">Giới thiệu</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Liên hệ</a>
+    <div class="logo">Portfolio</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="projects.html">Dự án</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+
+    <button id="themeToggle">🌙</button>
 </nav>
 
-<button id="darkModeBtn">🌙 Dark Mode</button>
+<section class="section hidden">
 
-<header>
+    <h1>Danh sách dự án</h1>
 
-<img src="images/avatar.jpg" alt="Avatar">
+    <div class="projects-grid">
 
-<h1>Các dự án của tôi</h1>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Website cá nhân chuyên nghiệp.</p>
+        </div>
 
-<p>Một số dự án nổi bật trong quá trình học tập</p>
+        <div class="project-card">
+            <h3>Todo List App</h3>
+            <p>Quản lý công việc hằng ngày.</p>
+        </div>
 
-</header>
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>Xem thời tiết theo thời gian thực.</p>
+        </div>
 
-<section>
+        <div class="project-card">
+            <h3>Calculator</h3>
+            <p>Máy tính đơn giản bằng JavaScript.</p>
+        </div>
 
-<div class="projects-grid">
+        <div class="project-card">
+            <h3>Student Manager</h3>
+            <p>Quản lý thông tin sinh viên.</p>
+        </div>
 
-<div class="project">
-<h3>📋 Todo List App</h3>
-<p>Ứng dụng quản lý công việc bằng JavaScript.</p>
-</div>
+        <div class="project-card">
+            <h3>Landing Page</h3>
+            <p>Trang quảng bá sản phẩm.</p>
+        </div>
 
-<div class="project">
-<h3>🌤 Weather App</h3>
-<p>Ứng dụng xem thời tiết theo thời gian thực.</p>
-</div>
-
-<div class="project">
-<h3>💼 Portfolio Website</h3>
-<p>Website giới thiệu bản thân và kỹ năng.</p>
-</div>
-
-<div class="project">
-<h3>🧮 Calculator App</h3>
-<p>Máy tính cơ bản bằng HTML, CSS và JavaScript.</p>
-</div>
-
-<div class="project">
-<h3>🔐 Login Form</h3>
-<p>Giao diện đăng nhập responsive.</p>
-</div>
-
-<div class="project">
-<h3>📝 Blog Website</h3>
-<p>Trang blog cá nhân đơn giản.</p>
-</div>
-
-</div>
+    </div>
 
 </section>
 
 <footer>
-<p>© 2026 Lữ Thị Trúc Sang - Portfolio</p>
+    <p>© 2026 Lữ Thị Trúc Sang</p>
 </footer>
 
 <script src="js/script.js"></script>
