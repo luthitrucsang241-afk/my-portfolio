@@ -9,6 +9,7 @@ body{
     line-height:1.6;
     background:#f4f4f4;
     color:#333;
+    transition:0.3s;
 }
 
 nav{
@@ -124,13 +125,33 @@ button:hover{
     opacity:0.9;
 }
 
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
 .dark{
     background:#111;
     color:white;
 }
 
+.dark nav{
+    background:#000;
+}
+
 .dark header{
     background:#000;
+}
+
+.dark footer{
+    background:#000;
+}
+
+.dark #darkModeBtn{
+    background:#555;
 }
 
 .dark .project,
