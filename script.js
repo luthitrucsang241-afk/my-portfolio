@@ -1,43 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const themeToggle = document.getElementById("themeToggle");
+const btn = document.getElementById("darkModeBtn");
 
-    if(localStorage.getItem("theme") === "dark"){
-        document.body.classList.add("dark");
-        themeToggle.textContent = "☀️";
-    }
+if(btn){
 
-    themeToggle.addEventListener("click", () => {
+btn.addEventListener("click", () => {
 
-        document.body.classList.toggle("dark");
+document.body.classList.toggle("dark");
 
-        if(document.body.classList.contains("dark")){
-            localStorage.setItem("theme","dark");
-            themeToggle.textContent = "☀️";
-        }
-        else{
-            localStorage.setItem("theme","light");
-            themeToggle.textContent = "🌙";
-        }
+});
 
-    });
+}
 
-    const hiddenElements = document.querySelectorAll(".hidden");
+const observer = new IntersectionObserver(entries => {
 
-    const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
 
-        entries.forEach((entry) => {
+if(entry.isIntersecting){
 
-            if(entry.isIntersecting){
-                entry.target.classList.add("show");
-            }
+entry.target.classList.add("show");
 
-        });
+}
 
-    });
+});
 
-    hiddenElements.forEach((el) => {
-        observer.observe(el);
-    });
+});
+
+document.querySelectorAll(".hidden").forEach(el => {
+
+observer.observe(el);
+
+});
 
 });
