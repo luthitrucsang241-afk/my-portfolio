@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lữ Thị Trúc Sang - Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lữ Thị Trúc Sang | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <nav>
-<a href="index.html">Trang chủ</a>
-<a href="about.html">Giới thiệu</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Liên hệ</a>
+    <div class="logo">Portfolio</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="projects.html">Dự án</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+
+    <button id="themeToggle">🌙</button>
 </nav>
 
-<button id="darkModeBtn">🌙 Dark Mode</button>
+<header class="hero hidden">
+    <img src="images/avatar.jpg" alt="Avatar" class="avatar">
 
-<header>
+    <h1>Lữ Thị Trúc Sang</h1>
 
-<img src="images/avatar.jpg" alt="Avatar">
+    <p>
+        Sinh viên ngành Công nghệ Thông tin tại Đại học Văn Hiến,
+        yêu thích phát triển website và khám phá các công nghệ mới.
+    </p>
 
-<h1>Lữ Thị Trúc Sang</h1>
-
-<p>Full-stack Developer tương lai</p>
-
+    <div class="hero-buttons">
+        <a href="projects.html" class="btn">Xem dự án</a>
+        <a href="contact.html" class="btn-outline">Liên hệ</a>
+    </div>
 </header>
 
-<section>
+<section class="section hidden">
+    <h2>Dự án nổi bật</h2>
 
-<h2>Dự án nổi bật</h2>
+    <div class="home-projects">
 
-<div class="projects-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Website cá nhân giới thiệu bản thân và kỹ năng.</p>
+        </div>
 
-<div class="project">
-<h3>📋 Todo List App</h3>
-<p>Ứng dụng quản lý công việc bằng JavaScript.</p>
-</div>
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>Ứng dụng xem thời tiết sử dụng API.</p>
+        </div>
 
-<div class="project">
-<h3>🌤 Weather App</h3>
-<p>Ứng dụng xem thời tiết theo thời gian thực.</p>
-</div>
+        <div class="project-card">
+            <h3>Todo List</h3>
+            <p>Quản lý công việc bằng JavaScript.</p>
+        </div>
 
-<div class="project">
-<h3>💼 Portfolio Website</h3>
-<p>Website giới thiệu bản thân và kỹ năng.</p>
-</div>
-
-</div>
-
+    </div>
 </section>
 
 <footer>
-<p>© 2026 Lữ Thị Trúc Sang - Portfolio</p>
+    <p>© 2026 Lữ Thị Trúc Sang</p>
 </footer>
 
 <script src="js/script.js"></script>
