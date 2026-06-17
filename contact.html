@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ</title>
+    <title>Giới thiệu | Lữ Thị Trúc Sang</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
-    <div class="logo">Portfolio</div>
+<nav class="navbar">
+    <div class="logo">TRÚC SANG</div>
 
-    <ul class="nav-links">
+    <ul class="menu">
         <li><a href="index.html">Trang chủ</a></li>
         <li><a href="about.html">Giới thiệu</a></li>
         <li><a href="projects.html">Dự án</a></li>
@@ -21,48 +21,57 @@
     <button id="themeToggle">🌙</button>
 </nav>
 
+<section class="page-banner hidden">
+    <h1>Giới thiệu bản thân</h1>
+</section>
+
 <section class="section hidden">
 
-    <h1>Liên hệ</h1>
+    <div class="about-box">
 
-    <div class="contact-info">
-        <p><strong>Email:</strong> luthitrucsang241@gmail.com</p>
-        <p><strong>Số điện thoại:</strong> 093728346</p>
+        <h2>Thông tin cá nhân</h2>
+
+        <p>
+            Xin chào, mình là <strong>Lữ Thị Trúc Sang</strong>,
+            hiện đang theo học ngành <strong>Công nghệ Thông tin</strong>
+            tại <strong>Đại học Văn Hiến</strong>.
+        </p>
+
+        <p>
+            Mình yêu thích phát triển website, thiết kế giao diện người dùng
+            và tìm hiểu các công nghệ mới trong lĩnh vực lập trình.
+        </p>
+
+        <p>
+            Mục tiêu của mình là trở thành một lập trình viên chuyên nghiệp,
+            có khả năng xây dựng các sản phẩm web hiện đại và thân thiện với người dùng.
+        </p>
+
     </div>
 
-    <form action="https://formspree.io/f/mrevvpen" method="POST" class="contact-form">
+</section>
 
-        <input
-            type="text"
-            name="name"
-            placeholder="Họ và tên"
-            required
-        >
+<section class="section hidden">
 
-        <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-        >
+    <div class="section-title">
+        <h2>Kỹ năng</h2>
+    </div>
 
-        <textarea
-            name="message"
-            rows="6"
-            placeholder="Nội dung tin nhắn"
-            required
-        ></textarea>
+    <div class="skills">
 
-        <button type="submit" class="btn">
-            Gửi tin nhắn
-        </button>
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">UI/UX</div>
 
-    </form>
+    </div>
 
 </section>
 
 <footer>
-    <p>© 2026 Lữ Thị Trúc Sang</p>
+    <p>© 2026 Lữ Thị Trúc Sang | Portfolio</p>
 </footer>
 
 <script src="js/script.js"></script>
