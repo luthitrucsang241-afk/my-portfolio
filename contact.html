@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu | Lữ Thị Trúc Sang</title>
+    <title>Liên hệ | Lữ Thị Trúc Sang</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,49 +22,71 @@
 </nav>
 
 <section class="page-banner hidden">
-    <h1>Giới thiệu bản thân</h1>
+    <h1>Liên hệ</h1>
 </section>
 
 <section class="section hidden">
 
-    <div class="about-box">
+    <div class="contact-box">
 
-        <h2>Thông tin cá nhân</h2>
+        <div class="contact-info">
 
-        <p>
-            Xin chào, mình là <strong>Lữ Thị Trúc Sang</strong>,
-            hiện đang theo học ngành <strong>Công nghệ Thông tin</strong>
-            tại <strong>Đại học Văn Hiến</strong>.
-        </p>
+            <h2>Thông tin liên hệ</h2>
 
-        <p>
-            Mình yêu thích phát triển website, thiết kế giao diện người dùng
-            và tìm hiểu các công nghệ mới trong lĩnh vực lập trình.
-        </p>
+            <p>
+                <strong>Họ tên:</strong>
+                Lữ Thị Trúc Sang
+            </p>
 
-        <p>
-            Mục tiêu của mình là trở thành một lập trình viên chuyên nghiệp,
-            có khả năng xây dựng các sản phẩm web hiện đại và thân thiện với người dùng.
-        </p>
+            <p>
+                <strong>Email:</strong>
+                luthitrucsang241@gmail.com
+            </p>
 
-    </div>
+            <p>
+                <strong>Số điện thoại:</strong>
+                0937283546
+            </p>
 
-</section>
+            <p>
+                <strong>Trường:</strong>
+                Đại học Văn Hiến
+            </p>
 
-<section class="section hidden">
+        </div>
 
-    <div class="section-title">
-        <h2>Kỹ năng</h2>
-    </div>
+        <form
+            action="https://formspree.io/f/mrevvpen"
+            method="POST"
+            class="contact-form"
+        >
 
-    <div class="skills">
+            <input
+                type="text"
+                name="name"
+                placeholder="Họ và tên"
+                required
+            >
 
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Responsive Design</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">UI/UX</div>
+            <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+            >
+
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Nội dung tin nhắn"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Gửi tin nhắn
+            </button>
+
+        </form>
 
     </div>
 
