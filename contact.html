@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Liên hệ</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <nav>
-<a href="index.html">Trang chủ</a>
-<a href="about.html">Giới thiệu</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Liên hệ</a>
+    <div class="logo">Portfolio</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="projects.html">Dự án</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+
+    <button id="themeToggle">🌙</button>
 </nav>
 
-<button id="darkModeBtn">🌙 Dark Mode</button>
+<section class="section hidden">
 
-<header>
+    <h1>Liên hệ</h1>
 
-<img src="images/avatar.jpg" alt="Avatar">
+    <div class="contact-info">
+        <p><strong>Email:</strong> luthitrucsang241@gmail.com</p>
+        <p><strong>Số điện thoại:</strong> 093728346</p>
+    </div>
 
-<h1>Liên hệ với tôi</h1>
+    <form action="https://formspree.io/f/mrevvpen" method="POST" class="contact-form">
 
-<p>Hãy gửi tin nhắn cho mình</p>
+        <input
+            type="text"
+            name="name"
+            placeholder="Họ và tên"
+            required
+        >
 
-</header>
+        <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+        >
 
-<section>
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Nội dung tin nhắn"
+            required
+        ></textarea>
 
-<h2>📬 Thông tin liên hệ</h2>
+        <button type="submit" class="btn">
+            Gửi tin nhắn
+        </button>
 
-<p>Email: trucsang@example.com</p>
-
-<p>Portfolio cá nhân của Lữ Thị Trúc Sang</p>
-
-<br>
-
-<form action="https://formspree.io/f/mrevvpen" method="POST">
-
-<input type="text" name="name" placeholder="Họ và tên" required>
-
-<input type="email" name="email" placeholder="Email" required>
-
-<textarea name="message" rows="5" placeholder="Nhập nội dung..." required></textarea>
-
-<button type="submit">Gửi tin nhắn</button>
-
-</form>
+    </form>
 
 </section>
 
 <footer>
-<p>© 2026 Lữ Thị Trúc Sang - Portfolio</p>
+    <p>© 2026 Lữ Thị Trúc Sang</p>
 </footer>
 
 <script src="js/script.js"></script>
