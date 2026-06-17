@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giới thiệu</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <nav>
-<a href="index.html">Trang chủ</a>
-<a href="about.html">Giới thiệu</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Liên hệ</a>
+    <div class="logo">Portfolio</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="projects.html">Dự án</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+
+    <button id="themeToggle">🌙</button>
 </nav>
 
-<button id="darkModeBtn">🌙 Dark Mode</button>
+<section class="section hidden">
 
-<header>
+    <h1>Giới thiệu bản thân</h1>
 
-<img src="images/avatar.jpg" alt="Avatar">
+    <p>
+        Xin chào, mình là Lữ Thị Trúc Sang.
+        Hiện đang là sinh viên ngành Công nghệ Thông tin tại Đại học Văn Hiến.
+    </p>
 
-<h1>Lữ Thị Trúc Sang</h1>
+    <p>
+        Mình có niềm đam mê với lập trình web,
+        thiết kế giao diện người dùng và phát triển các ứng dụng hiện đại.
+    </p>
 
-<p>Sinh viên Công nghệ Thông tin</p>
+    <h2>Kỹ năng</h2>
 
-</header>
+    <div class="skills">
 
-<section>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>GitHub</span>
+        <span>Responsive Design</span>
 
-<h2>👋 Giới thiệu bản thân</h2>
-
-<p>Xin chào! Mình là Lữ Thị Trúc Sang.</p>
-
-<p>Mình yêu thích lập trình web và đang học HTML, CSS, JavaScript.</p>
-
-<p>Mục tiêu của mình là trở thành Full-stack Developer trong tương lai.</p>
+    </div>
 
 </section>
 
 <footer>
-<p>© 2026 Lữ Thị Trúc Sang - Portfolio</p>
+    <p>© 2026 Lữ Thị Trúc Sang</p>
 </footer>
 
 <script src="js/script.js"></script>
