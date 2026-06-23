@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đèn Kéo Quân</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+}
+
+h1{
+    margin-top:30px;
+}
+
+.container{
+    width:300px;
+    height:300px;
+    margin:120px auto;
+    perspective:1000px;
+}
+
+.carousel{
+    width:100%;
+    height:100%;
+    position:relative;
+    transform-style:preserve-3d;
+    animation:rotate 12s linear infinite;
+}
+
+.carousel:hover{
+    animation-play-state:paused;
+}
+
+.carousel img{
+    position:absolute;
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    border:3px solid white;
+}
+
+@keyframes rotate{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(360deg);
+    }
+}
+
+.back{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.result{
+    margin-top:100px;
+}
+
+.result img{
+    width:80%;
+    max-width:800px;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>BÀI TẬP 19 - ĐÈN KÉO QUÂN</h1>
+
+<a class="back" href="index.html">← Quay về Portfolio</a>
+
+<div class="container">
+    <div class="carousel">
+
+        <img src="h1.jpg"
+        style="transform:rotateY(0deg) translateZ(250px);">
+
+        <img src="h2.jpg"
+        style="transform:rotateY(60deg) translateZ(250px);">
+
+        <img src="h3.jpg"
+        style="transform:rotateY(120deg) translateZ(250px);">
+
+        <img src="h4.jpg"
+        style="transform:rotateY(180deg) translateZ(250px);">
+
+        <img src="h5.jpg"
+        style="transform:rotateY(240deg) translateZ(250px);">
+
+        <img src="h6.jpg"
+        style="transform:rotateY(300deg) translateZ(250px);">
+
+    </div>
+</div>
+
+<div class="result">
+    <h2>Kết quả bài tập 18 (Trắc nghiệm)</h2>
+    <br>
+    <img src="tracnghiem.png" alt="Bài tập 18">
+</div>
+
+<br><br><br>
+
+</body>
+</html>
